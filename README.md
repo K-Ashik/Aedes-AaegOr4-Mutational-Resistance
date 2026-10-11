@@ -20,13 +20,18 @@ A computational biotechnology and functional genomics research project investiga
 
 ## 🔬 Computational Pipeline Architecture
 
+```text
 COMPUTATIONAL PIPELINE
-                                      │
-┌─────────────────────────────────────┼─────────────────────────────────────┐
-▼                                     ▼                                     ▼
-[1. TARGET PREPARATION]          [2. IN SILICO MUTAGENESIS]            [3. DUAL-VARIANT SCREENING]
-Fetch AlphaFold AaegOr4          Truncate Tyr150 -> Ala150             Batch dock DEET, Sulcatone,
-structure (A0A1S7UE45)           to model SNP resistance               & 15 natural terpenes via Vina
+│
+├── [1. TARGET PREPARATION]
+│   └── Fetch AlphaFold AaegOr4 structure (A0A1S7UE45)
+│
+├── [2. IN SILICO MUTAGENESIS]
+│   └── Truncate Tyr150 → Ala150 to model SNP resistance
+│
+└── [3. DUAL-VARIANT SCREENING]
+    └── Batch dock DEET, Sulcatone, and 15 natural terpenes via AutoDock Vina
+```
 
 
 ---
