@@ -20,6 +20,7 @@ A computational biotechnology and functional genomics research project investiga
 
 ## 🔬 Computational Pipeline Architecture
 
+```text
 COMPUTATIONAL PIPELINE
                                       │
 ┌─────────────────────────────────────┼─────────────────────────────────────┐
@@ -27,7 +28,7 @@ COMPUTATIONAL PIPELINE
 [1. TARGET PREPARATION]          [2. IN SILICO MUTAGENESIS]            [3. DUAL-VARIANT SCREENING]
 Fetch AlphaFold AaegOr4          Truncate Tyr150 -> Ala150             Batch dock DEET, Sulcatone,
 structure (A0A1S7UE45)           to model SNP resistance               & 15 natural terpenes via Vina
-
+```
 
 ---
 
@@ -48,7 +49,9 @@ structure (A0A1S7UE45)           to model SNP resistance               & 15 natu
 ## 📈 Visual Analytics & 3D Simulations
 
 ### Comparative Binding Analytics
+
 ![Screening Analytics](./aedes_data/visualizations/screening_and_resistance_analytics.png)
+
 * **Panel A:** Binding affinity depth across Wild-Type vs. Y150A Mutant variants.
 * **Panel B:** Resistance energy loss ($\Delta\Delta G$). DEET shows prominent affinity loss ($+0.42\text{ kcal/mol}$), whereas Limonene exhibits enhanced stability ($-0.13\text{ kcal/mol}$).
 
@@ -56,6 +59,7 @@ structure (A0A1S7UE45)           to model SNP resistance               & 15 natu
 
 ## 📁 Repository Structure
 
+```text
 .
 ├── aedes_data/
 │   ├── structures/                  # Wild-Type and Mutant PDB models
@@ -67,14 +71,18 @@ structure (A0A1S7UE45)           to model SNP resistance               & 15 natu
 ├── generate_3d_animation.py         # 3D PyMOL render & MP4 video generator
 ├── generate_plots.py                # Publication-grade analytics plotting script
 └── research_paper_aaegor4.md        # Full research manuscript draft
-
+```
 
 ---
+
 ## Details
-📄 Research Manuscript
+
+### 📄 Research Manuscript
+
 The complete manuscript detailing the structural mechanics, thermodynamic parameters, and vector control implications is available in research_paper_aaegor4.md.
 
-👤 Author
+### 👤 Author
+
 Khalid Md Ashik
 
 Master's Student in Digital Transformation, FH Dortmund
